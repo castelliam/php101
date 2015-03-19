@@ -2,12 +2,18 @@
 
 	// Homework 1
 
-	$input = $argv[1];
+	$i = 1;
+	while($argv[$i] !== null){
+		$input .= " " . $argv[$i];
+		$i++;
+	}
+
+	echo "FINAL Input: " . $input . "\n";
 
 	function multiplyText($str) {
 		$result = '';
 
-		for ($i = 1; $i <= 10; $i++) {
+		for ($i = 1; $i <= 5; $i++) {
 			$result .= $i . ': ' . $str . PHP_EOL;
 		}
 
